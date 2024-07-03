@@ -1,18 +1,43 @@
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import Home from './screens/HomeScreen';
+import Cart from './screens/CartScreen';
+
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <NavigationContainer>
+      <Drawer.Navigator
+        initialRouteName={Home}
+        screenOptions={{
+          headerShown: false
+        }}
+      >
+        <Drawer.Screen 
+          name="Home" 
+          component={Home} 
+          options={{
+            drawerActiveTintColor: "#686868",
+            drawerActiveBackgroundColor: "#E6DBD0", 
+            drawerContentStyle: {
+              backgroundColor: "#FFFFFF",
+            },
+          }}
+        />
+        <Drawer.Screen 
+        name="Cart" 
+        component={Cart} 
+        options={{
+          drawerActiveTintColor: "#686868",
+            drawerActiveBackgroundColor: "#E6DBD0", 
+            drawerContentStyle: {
+              backgroundColor: "#FFFFFF",
+            }
+        }}/>
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
