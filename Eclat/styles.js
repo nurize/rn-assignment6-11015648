@@ -6,14 +6,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    padding: 20,
     paddingTop: 50,
+    paddingHorizontal: 20,
+    width: '100%',
+    paddingBottom: 5, 
   },
   homeHeader: {
     flexDirection: 'row',
     columnGap: 80,
     paddingVertical: 20,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%'
   }, 
   headerIcon: {
     width: 35, 
@@ -34,20 +38,22 @@ const styles = StyleSheet.create({
   galleryContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
+    width: '50%',
+    marginRight: 5,
   },
   galleryItem: {
-    width: 200,
-    height: 220,
+    width: '120%',
+    height: '120%',
     flex: 1,
     padding: 5,
-    marginRight: 5
+    marginBottom: 37,
   },
   addButton: {
     alignSelf: 'flex-end', 
-    marginTop: 180, 
-    marginRight: 3, 
+    marginTop: 180,  
     width: 30, 
-    height: 30
+    height: 30,
+    marginLeft: 80,
   },
   itemName: {
     fontSize: 20,
