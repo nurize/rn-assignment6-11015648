@@ -47,9 +47,7 @@ const Home = () => {
           <StatusBar barStyle={'dark-content'}/>
           <View style={styles.homeHeader}>
             <CustomDrawerButton style={styles.customDrawerButton}/>
-            <View style= {{height: 45, width: 85}}>
-              <Image style= {{height: 45, width: 85}} source={Logo}/>
-            </View>
+            <Image  source={Logo}/>
             <View style={{flexDirection: 'row', gap: 20}}>
               <Image style={styles.headerIcon} source={SearchButton}/>
               <Image style={styles.headerIcon} source={ShoppingBag}/> 
