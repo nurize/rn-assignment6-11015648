@@ -39,10 +39,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     width: '50%',
-    marginRight: 5,
+    marginRight: 10,
   },
   galleryItem: {
-    width: '120%',
+    width: '118%',
     height: '120%',
     flex: 1,
     padding: 5,
